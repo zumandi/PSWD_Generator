@@ -1,0 +1,57 @@
+@import '../../variables.scss';
+
+.Title{
+    background-color: $color_black;
+    color: $color_white;
+    font-size: 2rem;
+    line-height: 1;
+    padding: 2rem 3rem;
+    text-align: left;
+    border-top-left-radius: 3.57rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 10rem;
+    position: relative;
+    .Password{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.2em;
+        span{
+            display: inline-block;
+        }
+
+        .P{
+            transform: scale(-1, 1);
+            margin-right: 0.4em;
+        }
+        .S{
+            margin-right: 0.5em;
+        }
+        .W{
+            margin-right: 0.4em;
+        }
+        .D{
+            &:before{
+                content: '';
+                width: 0.7em;
+                display: inline-block;
+                border-bottom: 0.16em solid $color_white;
+                margin-right: 0.15em;
+            }
+        }
+    }
+    .Generator{
+        text-transform: uppercase;
+        font-weight: 200;
+    }
+
+    .Shape{
+        width: 6rem;
+        height: 6rem;
+        background-color: $color_black;
+        position: absolute;
+        display: block;
+        left: 0;
+        bottom: -6rem;
+        mask-image: radial-gradient(circle 6rem at 100% 100%, transparent 0, transparent 6rem, black 0);
+    }
+}

@@ -1,0 +1,28 @@
+@import '../../../variables.scss';
+
+.Button{
+    text-transform: uppercase;
+    background-color: $color_orange;
+    color: $color_black;
+    border: none;
+
+    padding: 1rem;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+
+    cursor: pointer;
+
+    transition: background-color 0.4s ease;
+
+    &:hover{
+        background-color: lighten($color_orange, 20%);
+    }
+}

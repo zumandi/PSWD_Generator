@@ -1,0 +1,28 @@
+@import '../../../../variables.scss';
+
+.InputField{
+    opacity: 0.5;
+
+    border-bottom: 0.05rem solid $color_black;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    .Label{
+        text-transform: uppercase;
+        margin-right: 1rem;
+        padding: 0.5rem;
+    }
+
+    Input{
+        border: none;
+        background-color: lighten($color_black, 80%);
+        flex: 1;
+        padding: 0.5rem;
+        text-align: right;
+    }
+
+    &.Active{
+        opacity: 1;
+    }
+}

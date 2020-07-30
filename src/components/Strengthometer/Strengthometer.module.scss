@@ -1,0 +1,99 @@
+@import '../../variables.scss';
+
+.Strengthometer{
+    height: 0.5rem;
+    border: 1px solid $color_black;
+    background-color: $color_black;
+    border-radius: 1rem;
+    position: relative;
+    width: 100%;
+    margin: 2rem auto 0;
+
+    .Bar{
+        width: 10%;
+        border-radius: 1rem;
+        height: 100%;
+        background-color: #FF0505;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        transition: all 0.6s ease;
+    }
+
+    &.Danger{
+        .Bar{
+            width: 5%;
+            background-color: #FF0505;
+        }
+    }
+    &.Low{
+        .Bar{
+            width: 22%;
+            background-color: #ff9305;
+        }
+        
+    }
+    &.Medium{
+        .Bar{
+            width: 38%;
+            background-color: #FFE205;
+        }
+        
+    }
+    &.Good{
+        .Bar{
+            width: 63%;
+            background-color: #b4f262;
+        }
+        
+    }
+    &.Perfect{
+        .Bar{
+            width: 100%;
+            background-color: #62F272;
+        }
+        
+    }
+}
+
+.Label{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    font-size: 0.75em;
+    padding: 0.5rem 0;
+    position: relative;
+
+    span{
+        &:before{
+            content: '';
+            width: 0.2rem;
+            height: 1rem;
+            background-color: $color_blue;
+            position: absolute;
+            top: -1rem;
+        }
+        &:first-child{
+            &:before{
+                left: 25%;
+            }
+        }
+        &:nth-child(2){
+            &:before{
+                left: 50%;
+            }
+        }
+        &:nth-child(3){
+            &:before{
+                left: 75%;
+            }
+        }
+        &:last-child{
+            &:before{
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@import './variables.scss';
+
+@font-face {
+  font-family: 'Sora';
+  src: local('./fonts/Sora-VariableFont_wght.ttf');
+}
+
+*{
+  box-sizing: border-box;
+}
+.App {
+  font-family: "Sora";
+  font-size: 14px;
+
+  h1{
+    text-align: center;
+  }
+}
+
+.Generator{
+  max-width: 30rem;
+  margin: 0 auto;
+  box-shadow: 0 0 2rem rgba($color_black, 0.1);
+  border-top-left-radius: 3.57rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  background-color: $color_blue;
+}

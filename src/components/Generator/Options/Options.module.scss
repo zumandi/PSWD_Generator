@@ -1,0 +1,38 @@
+@import '../../../variables.scss';
+
+.Options{
+    padding: 1rem;
+    margin: 0 0 2rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: $color_white;
+}
+
+.Open{
+    background-color: $color_white;
+    display: inline-block;
+    margin: 1rem 0 0 0;
+    padding: 0.25rem 2rem;
+    height: 2rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border: none;
+    border-radius:  1.5rem;
+
+    &:focus{
+        outline: none;
+    }
+
+    &:hover{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.Active{
+    .Open{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
