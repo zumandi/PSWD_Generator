@@ -3,13 +3,13 @@
 .Title{
     background-color: $color_black;
     color: $color_white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1;
-    padding: 2rem 3rem;
+    padding: 2rem 10%;
     text-align: left;
     border-top-left-radius: 3.57rem;
     border-top-right-radius: 2rem;
-    border-bottom-right-radius: 10rem;
+    border-bottom-right-radius: 4rem;
     position: relative;
     .Password{
         text-transform: uppercase;
@@ -41,17 +41,24 @@
     }
     .Generator{
         text-transform: uppercase;
-        font-weight: 200;
+        font-weight: 100;
+        letter-spacing: 0.015em;
     }
 
     .Shape{
-        width: 6rem;
-        height: 6rem;
+        width: 5rem;
+        height: 5rem;
         background-color: $color_black;
         position: absolute;
         display: block;
         left: 0;
-        bottom: -6rem;
-        mask-image: radial-gradient(circle 6rem at 100% 100%, transparent 0, transparent 6rem, black 0);
+        bottom: -5rem;
+        mask-image: radial-gradient(circle 5rem at 100% 100%, transparent 0, transparent 5rem, black 0);
+    }
+}
+
+@media screen and (min-width: 30rem) {
+    .Title{
+        font-size: 2rem;
     }
 }

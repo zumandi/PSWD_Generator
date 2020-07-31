@@ -1,17 +1,10 @@
 @import './variables.scss';
 
-@font-face {
-  font-family: 'Sora';
-  src: local('./fonts/Sora-VariableFont_wght.ttf');
-}
 
 *{
   box-sizing: border-box;
 }
 .App {
-  font-family: "Sora";
-  font-size: 14px;
-
   h1{
     text-align: center;
   }
