@@ -7,7 +7,6 @@ import Generator from './components/Generator/Generator'
 function App() {
   return (
     <div className={classes.App}>
-      <h1>Password-Generator</h1>
       <div className={classes.Generator}>
         <Title />
         <Generator />

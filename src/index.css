@@ -27,7 +27,22 @@
     font-style: normal;
 }
 
+html, body{
+    padding: 0;
+    margin: 0;
+    overscroll-behavior: none;
+}
+
 html, body, button, input{
     font-family: "Sora" !important ;
     font-size: 14px;
+}
+
+@media only screen and (min-width: 30rem){
+    html, body{
+        height: 100%;
+    }
+    #root{
+        height: 100%;
+    }
 }

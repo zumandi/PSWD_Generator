@@ -19,6 +19,8 @@
     transition: all 0.4s ease;
     border: none;
     border-radius:  1.5rem;
+    // font-size: 16px;
+    touch-action: manipulation;
 
     &:focus{
         outline: none;

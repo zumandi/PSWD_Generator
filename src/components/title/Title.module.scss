@@ -7,8 +7,6 @@
     line-height: 1;
     padding: 2rem 10%;
     text-align: left;
-    border-top-left-radius: 3.57rem;
-    border-top-right-radius: 2rem;
     border-bottom-right-radius: 4rem;
     position: relative;
     .Password{
@@ -53,12 +51,15 @@
         display: block;
         left: 0;
         bottom: -5rem;
-        mask-image: radial-gradient(circle 5rem at 100% 100%, transparent 0, transparent 5rem, black 0);
+        -webkit-mask-image: radial-gradient(circle 5rem at 100% 99%, transparent 0, transparent 99%, black 0);
+        mask-image: radial-gradient(circle 5rem at 100% 99%, transparent 0, transparent 99%, black 0);
     }
 }
 
 @media screen and (min-width: 30rem) {
     .Title{
         font-size: 2rem;
+        border-top-left-radius: 3.57rem;
+        border-top-right-radius: 2rem;
     }
 }
