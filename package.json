@@ -7,10 +7,10 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "classnames": "^2.2.6",
-    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.53.0",
     "zxcvbn": "^4.4.2"
   },
   "homepage": "http://code.fzzymnt.de/passwordGenerator",
